@@ -1,6 +1,5 @@
 .section {
   position: relative;
-  z-index: -99;
   padding: 1.5rem 8vw;
 }
 
@@ -28,15 +27,13 @@ p {
   align-self: stretch;
   margin: 2rem -8vw;
   min-height: 35vh;
-  position: relative;
-  z-index: -99;
   background: url("./main.png") no-repeat scroll;
   background-size: cover;
   background-position: 20%;
 }
 
 .title {
-  width: 60vw;
+  width: 70vw;
   position: absolute;
   right: 0;
   background-color: #2D232E;
@@ -51,7 +48,7 @@ p {
   content: "";
   display: block;
   background-color: #918993;
-  width: 64vw;
+  width: 74vw;
   position: absolute;
   right: 0;
   top: -10px;

@@ -1,6 +1,7 @@
 import './about.css';
 
-export default function About() {
+export default function About({ active }) {
+
     return (
         <>
             <section className="section s1">
@@ -13,7 +14,7 @@ export default function About() {
                 <div className="title"><h2>O NAS</h2></div>
                 <div className="paragraph-grid">
                     <div>
-                        <img src="./assets/about/icon1.png"/>
+                        <img src="./assets/about/icon1.png" alt=''/>
                         <p>Wspólny wysiłek  Ukrainców żyjących w Polsce, oraz grupy miłośników Ukrainy umożliwił stworzenie Ukraińskiego Centrum Kultury.</p>
                     </div>
                     <div className="lines">
@@ -22,7 +23,7 @@ export default function About() {
                         <div></div>
                     </div>
                     <div>
-                        <img src="./assets/about/icon2.png"/>
+                        <img src="./assets/about/icon2.png" alt=''/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et pharetra ipsum, in vulputate lectus. Aliquam placerat erat in justo volutpat placerat pulvinar eget nibh. Etiam efficitur porttitor aliquam.</p>
                     </div>
                     <div className="lines">
@@ -31,7 +32,7 @@ export default function About() {
                         <div></div>
                     </div>
                     <div>
-                        <img src="./assets/about/icon3.png"/>
+                        <img src="./assets/about/icon3.png" alt=''/>
                         <p>Naszym głównym założeniem jest badanie dziedzictwa kulturowego Ukrainy jako integralnej i żywej części świata. Chcemy przyczynić się do rozpowszechnienia się wiedzy na ten temat wśród Polaków, oraz wesprzeć tworzenie się więzi, przyjaźni i współpracy między społecznościami, polską i ukrainską.</p>
                     </div>
                 </div>

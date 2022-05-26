@@ -20,6 +20,15 @@ img {
   max-width: 100%;
 }
 
+.overlay.active {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
 .footer {
   min-height: 1.4in;
   margin-top: 1in;

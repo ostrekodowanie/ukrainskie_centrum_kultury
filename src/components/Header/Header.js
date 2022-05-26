@@ -1,19 +1,26 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useResolvedPath, useMatch } from 'react-router-dom';
 import './header.css';
 
-export default function Header() {
+export default function Header({ currentState, overlay }) {
     const [currentNavbar, setNavbar] = useState(false)
 
-    const showNav = () => setNavbar(!currentNavbar)
+    const showNav = () => {
+        setNavbar(!currentNavbar)
+        currentState(!currentNavbar)
+    }
+
+    useEffect(() => {
+        setNavbar(overlay)
+    }, [overlay])
 
     return (
-        <div className="header-wrapper">
+        <div className="header-wrapper" style={currentNavbar ? {zIndex: 100} : {}}>
             <header className={currentNavbar ? "header header-shadow" : "header"}>
                 <div className="logo">
                     <Link to="/">Logo</Link>
                 </div>
-                <div onClick={showNav} className={currentNavbar ? "burger burger-active" : "burger"}>
+                <div onClick={() => showNav()} className={currentNavbar ? "burger burger-active" : "burger"}>
                     <div></div>
                     <div></div>
                     <div></div>
