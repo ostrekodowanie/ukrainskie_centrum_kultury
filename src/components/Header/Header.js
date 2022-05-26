@@ -13,7 +13,7 @@ export default function Header() {
                 <div className="logo">
                     <Link to="/">Logo</Link>
                 </div>
-                <div onClick={showNav} className="burger">
+                <div onClick={showNav} className={currentNavbar ? "burger burger-active" : "burger"}>
                     <div></div>
                     <div></div>
                     <div></div>

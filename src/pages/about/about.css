@@ -1,0 +1,93 @@
+.section {
+  position: relative;
+  z-index: -99;
+  padding: 1.5rem 8vw;
+}
+
+p {
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.s1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.s1 h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+.s1 p {
+  max-width: 95%;
+  font-size: 1.2rem;
+}
+
+.about-image {
+  align-self: stretch;
+  margin: 2rem -8vw;
+  min-height: 35vh;
+  position: relative;
+  z-index: -99;
+  background: url("./main.png") no-repeat scroll;
+  background-size: cover;
+  background-position: 20%;
+}
+
+.title {
+  width: 60vw;
+  position: absolute;
+  right: 0;
+  background-color: #2D232E;
+  padding: 5px 1.5rem;
+}
+.title h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #F1F0EA;
+}
+.title::after {
+  content: "";
+  display: block;
+  background-color: #918993;
+  width: 64vw;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  bottom: 10px;
+  z-index: -99;
+}
+
+.paragraph-grid {
+  margin-top: 1.2in;
+  display: grid;
+  row-gap: 3em;
+  text-align: center;
+}
+.paragraph-grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paragraph-grid p {
+  font-size: 1.2rem;
+  max-width: 90%;
+  margin: 1.5em 0 0 0;
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  height: 1rem;
+}
+.lines div {
+  flex: 1;
+  width: 100%;
+}
+.lines div:first-child {
+  background-color: #413DED;
+}
+.lines div:last-child {
+  background-color: #EDD81E;
+}/*# sourceMappingURL=about.css.map */
