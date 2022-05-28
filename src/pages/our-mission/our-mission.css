@@ -1,0 +1,129 @@
+.om-s1 {
+  background: url("./background1.png") no-repeat;
+  background-size: cover;
+  background-position: 90%;
+  padding: 3rem 8vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-div {
+  border: 1px solid #000;
+  border-radius: 2em;
+  padding: 1.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.45);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-div img {
+  max-width: 5rem;
+  max-height: 5rem;
+}
+.title-div h2 {
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.title-div p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 95%;
+}
+.title-div:first-child {
+  margin-bottom: 3rem;
+}
+
+.om-s2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.om-s2 p {
+  font-weight: 300;
+  text-align: center;
+  font-size: 1.3rem;
+  max-width: 90%;
+}
+
+.om-s3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.our-goals {
+  margin: 0 -8vw;
+  background-color: #2D232E;
+}
+.our-goals h2 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F1F0EA;
+}
+.our-goals h2 img {
+  max-height: 1.1em;
+  margin-right: 10px;
+}
+
+.goals-line-div {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  width: 100%;
+  min-height: 12in;
+  display: flex;
+  justify-content: space-between;
+}
+.line div {
+  width: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.line div .point {
+  width: 1.5rem;
+  height: 6px;
+  position: relative;
+}
+.line div .point p {
+  position: absolute;
+  font-size: 1.2rem;
+  width: 70vw;
+}
+
+div.blue-line {
+  background-color: #413DED;
+  margin-left: -1rem;
+}
+div.blue-line .point {
+  background-color: #413DED;
+  left: 6px;
+}
+div.blue-line .point p {
+  text-align: left;
+  left: 2.5rem;
+}
+div.blue-line .point:nth-child(2n) {
+  background-color: transparent;
+}
+
+div.yellow-line {
+  background-color: #EDD81E;
+  margin-right: -1rem;
+}
+div.yellow-line .point {
+  background-color: #EDD81E;
+  right: 1.5rem;
+}
+div.yellow-line .point p {
+  text-align: right;
+  right: 2.5rem;
+}
+div.yellow-line .point:nth-child(2n+1) {
+  background-color: transparent;
+}/*# sourceMappingURL=our-mission.css.map */

@@ -1,0 +1,188 @@
+@import '../../variables';
+
+.om-s1 {
+    background: url('./background1.png') no-repeat;
+    background-size: cover;
+    background-position: 90%;
+    padding: 3rem 8vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-div {
+    border: 1px solid #000;
+    border-radius: 2em;
+    padding: 1.5rem 1rem;
+    background-color: rgba(255, 255, 255, 0.45);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        max-width: 5rem;
+        max-height: 5rem;
+    }
+    
+    h2 {
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 1.2rem;
+        text-align: center;
+        max-width: 95%;
+    }
+    
+    &:first-child {
+        margin-bottom: 3rem;
+    }
+}
+
+.om-s2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-weight: 300;
+        text-align: center;
+        font-size: 1.3rem;
+        max-width: 90%;
+    }
+}
+
+.om-s3 {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.our-goals {
+    margin: 0 -8vw;
+    background-color: $primary;
+    h2 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $light;
+
+        img {
+            max-height: 1.1em;
+            margin-right: 10px;
+        }
+    }
+}
+
+.goals-line-div {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    width: 100%;
+    min-height: 12in;
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .point {
+            width: 1.5rem;
+            height: 6px;
+            position: relative;
+            p {
+                position: absolute;
+                font-size: 1.2rem;
+                width: 70vw;
+            }
+        }
+    }
+}
+
+div.blue-line {
+    background-color: $blue;
+    margin-left: -1rem;
+    .point {
+        background-color: $blue;
+        left: 6px;
+        p {
+            text-align: left;
+            left: 2.5rem;
+        }
+    }
+    .point:nth-child(2n) {
+        background-color: transparent;
+    }
+}
+
+div.yellow-line {
+    background-color: $yellow;
+    margin-right: -1rem;
+    .point {
+        background-color: $yellow;
+        right: 1.5rem;
+        p {
+            text-align: right;
+            right: 2.5rem;
+        }
+    }
+    .point:nth-child(2n+1) {
+        background-color: transparent;
+    }
+    
+}
+
+// .line {
+//     min-height: 9in;
+//     display: flex;
+//     div {
+//         width: 6px;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-around;
+//         .point {
+//             height: 6px;
+//             width: 1.2rem;
+//             position: relative;
+//             p {
+//                 margin: 0;
+//                 position: absolute;
+//                 font-size: 1.2rem;
+//             }
+//         }
+//     }
+// }
+
+// div.blue {
+//     background-color: #413DED;
+//     .point {
+//         background-color: #413DED;
+//         right: calc(1.2rem - 6px);
+//         p {
+//             text-align: right;
+//             right: 2rem;
+//         }
+//     }
+//     .point:nth-child(2n) {
+//         background-color: transparent;
+//     }
+// }
+
+// div.yellow {
+//     background-color: #EDD81E;
+//     .point {
+//         background-color: #EDD81E;
+//         p {
+//             text-align: left;
+//             left: 2rem;
+//         }
+//     }
+//     .point:nth-child(2n+1) {
+//         background-color: transparent;
+//     }
+// }

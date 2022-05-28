@@ -20,6 +20,10 @@ img {
   max-width: 100%;
 }
 
+.section {
+  overflow-x: hidden;
+}
+
 .overlay.active {
   position: fixed;
   top: 0;
