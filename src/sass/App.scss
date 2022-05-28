@@ -34,25 +34,3 @@ img {
     bottom: 0;
     z-index: 1;
 }
-
-.footer {
-    min-height: 1.4in;
-    margin-top: 1in;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: $primary;
-    p {
-        color: #EEF4ED;
-        font-weight: 300;
-        margin-bottom: 0;
-    }
-    a {
-        color: #FFF;
-        font-weight: 500;
-        text-decoration: none;
-        text-align: center;
-        margin: .4em 0 1.5em 0;
-    }
-}

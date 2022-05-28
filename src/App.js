@@ -2,6 +2,7 @@ import { useLocation } from 'react-router';
 import { Route, Routes } from 'react-router-dom';
 import './sass/App.css';
 import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import OurMission from './pages/our-mission/OurMission';
@@ -33,10 +34,7 @@ export default function App() {
           </Routes>
         </ScrollToTop>
       </main>
-      <footer className='footer'>
-        <p>&copy; Copyright 2022 Lorem ipsum  Inc. </p>
-        <a href='/'>Privacy Policy</a>
-      </footer>
+      <Footer />
     </div>
   );
 }
