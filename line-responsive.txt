@@ -1,0 +1,49 @@
+.line {
+    min-height: 9in;
+    display: flex;
+    div {
+        width: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .point {
+            height: 6px;
+            width: 1.2rem;
+            position: relative;
+            p {
+                margin: 0;
+                position: absolute;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+div.blue {
+    background-color: #413DED;
+    .point {
+        background-color: #413DED;
+        right: calc(1.2rem - 6px);
+        p {
+            text-align: right;
+            right: 2rem;
+        }
+    }
+    .point:nth-child(2n) {
+        background-color: transparent;
+    }
+}
+
+div.yellow {
+    background-color: #EDD81E;
+    .point {
+        background-color: #EDD81E;
+        p {
+            text-align: left;
+            left: 2rem;
+        }
+    }
+    .point:nth-child(2n+1) {
+        background-color: transparent;
+    }
+}
